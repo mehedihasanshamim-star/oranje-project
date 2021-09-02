@@ -1,0 +1,100 @@
+.or-ceo{
+    background-image: url(../img/ceo.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 560px;
+    clear: both;
+    margin-bottom: 350px;
+    @media #{$medium_device}{
+        margin-bottom: 500px;
+    }
+    @media #{$medium_device}{
+        height: 300px;
+    }
+    @media #{$tab_device}{
+        margin-bottom: 380px;
+    }
+    @media #{$tab}{
+        height: 300px;
+    }
+    @media #{$large_mobile}{
+        margin-bottom: 500px;
+    }
+    @media #{$small_mobile_b}{
+        margin-bottom: 500px;
+    }
+    @media #{$small_mobile}{
+       height: 250px;
+       margin-bottom: 600px;
+    }
+}
+.ceo-ab-box{
+    background-color: $base_color_2;
+    padding: 45px 50px;
+    margin-top: 420px;
+    position: relative;
+    box-shadow: 0 3px 6px #00000015;
+    @media #{$medium_device}{
+       margin-top: 240px;
+    }
+    @media #{$tab_device}{
+        margin-top: 250px;
+    }
+    @media #{$large_mobile}{
+        margin-top: 235px;
+    }
+    @media #{$small_mobile_b}{
+       margin-top: 240px;
+    }
+    @media #{$small_mobile}{
+        flex-direction: column;
+        padding: 15px;
+        margin-top: 200px;
+    }
+    .ceo-ab-img{
+        width: 38%;
+        @media #{$medium_device}{
+            margin-right: 10px;
+        }
+        @media #{$tab}{
+            display: none;
+        }
+    }
+    .ceo-ab-text{
+        width: 62%;
+        @media #{$tab}{
+            width: auto;
+        }
+        @media #{$small_mobile_b}{
+            text-align: center;
+        }
+        @media #{$small_mobile}{
+           text-align: center;
+        }
+        p{
+            @media #{$small_mobile_b}{
+                font-size: 14px;
+            }
+            @media #{$small_mobile}{
+               font-size: 14px;
+            }
+        }
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        height: 5px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        transition: .4s;
+        background-color: $base_color_1;
+    }
+    &:hover{
+        &::after{
+            right: 0;
+            background-color: $header_bg;
+        }
+    }
+}

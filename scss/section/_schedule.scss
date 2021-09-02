@@ -1,0 +1,35 @@
+.or-schedule {
+    height: 490px;
+    position: relative;
+    background-image: url(../img/partner-bottom-bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @media #{$medium_device}{
+        height: 300px;
+    }
+    @media #{$tab_device}{
+        height: 300px;
+    }
+    @media #{$large_mobile}{
+        height: 270px;
+    }
+    @media #{$small_mobile_b}{
+        height: 230px;
+    }
+    @media #{$small_mobile}{
+        height: 150px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        opacity: .9;
+        background: linear-gradient(to right, #008999 0%, #000000 75%, #000000 99%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008999', endColorstr='#000000', GradientType=1);
+    }
+}

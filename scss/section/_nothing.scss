@@ -1,0 +1,94 @@
+.or-nothing {
+    background-color: $section_bg_1;
+    padding: 85px 0 100px 0;
+    @media #{$small_mobile}{
+        padding-bottom: 70px;
+    }
+}
+
+.hadding-title {
+    margin-bottom: 30px;
+
+    .title {
+        margin-bottom: 54px;
+        @media #{$tab_device}{
+           margin-bottom: 35px;
+        }
+        @media #{$large_mobile}{
+            margin-bottom: 30px;
+        }
+        @media #{$small_mobile_b}{
+            margin-bottom: 30px;
+        }
+        @media #{$small_mobile}{
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        span {
+            font-weight: $font_ragular;
+        }
+    }
+    .sub-title {
+        font-size: 25px;
+        line-height: 35px;
+        @media #{$tab_device}{
+            font-size: 20px;
+        }
+        @media #{$large_mobile}{
+            font-size: 20px;
+        }
+        @media #{$small_mobile_b}{
+            font-size: 20px;
+        }
+        @media #{$small_mobile}{
+            line-height: 30px;
+            font-size: 18px;
+        }
+    }
+}
+
+.single-nothing-box {
+    background-color: $white;
+    @media #{$medium_device}{
+        margin-bottom: 30px;
+    }
+    @media #{$tab}{
+        margin-bottom: 30px;
+    }
+    .nothing-img {
+        height: 320px;
+        background-color: #008999;
+    }
+    .nothing-img-2{
+        background-color: #e8c259;
+    }
+    .nothing-img-3{
+        background-color: #669cd1;
+    }
+
+    .nothing-text {
+        height: 165px;
+        flex-direction: column;
+        .nothing-text-title{
+            color: $base_color_2;
+            text-transform: uppercase;
+        }
+        .nothing-text-btn{
+            font-size: 15px;
+            color: #a5a5a5;
+            transition: .4s;
+            text-transform: uppercase;
+            i{
+                margin-left: 8px;
+                transition: .3s;
+            }
+            &:hover{
+                color: $base_color_1;
+                i{
+                    transform: translateX(10px);
+                }
+            }
+        }
+    }
+}

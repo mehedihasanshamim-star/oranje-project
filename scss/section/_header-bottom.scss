@@ -1,0 +1,29 @@
+.or-header-bottom{
+    background-color: $base_color_2;
+    padding: 7px 0;
+    @media #{$medium_device}{
+        padding: 15px 0;
+    }
+    @media #{$tab_device}{
+        padding: 15px 0;
+    }
+    @media #{$large_mobile}{
+        padding: 15px 0;
+    }
+    @media #{$small_mobile_b}{
+        padding: 15px 0;
+    }
+}
+.h-b-text{
+    margin-left: 14px;
+    .h-b-hadding{
+        font-weight: $font_bold;
+        color: $white;
+        text-transform: uppercase;
+    }
+    .h-b-sub-hadding{
+        font-size: 14px;
+        font-weight: $font_ragular;
+        color: $white;
+    }
+}

@@ -1,0 +1,33 @@
+.copy-right{
+    padding-bottom: 120px;
+    @media #{$big_screen}{
+        padding-bottom: 80px;
+    }
+    @media #{$medium_device}{
+        padding-bottom: 70px;
+    }
+    @media #{$tab_device}{
+        padding-bottom: 100px;
+    }
+    @media #{$large_mobile}{
+        padding-bottom: 90px;
+    }
+    @media #{$small_mobile_b}{
+       padding-bottom: 70px;
+    }
+    @media #{$small_mobile}{
+        padding-bottom: 50px;
+    }
+   
+}
+.copy-text{
+    border-top: 1px dashed #c2c2c2;
+    padding-top: 45px;
+    text-transform: uppercase;
+    @media #{$small_mobile}{
+        font-size: 14px;
+    }
+    .copy-link{
+        color: $base_color_1;
+    }
+}

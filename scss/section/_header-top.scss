@@ -1,0 +1,10 @@
+.or-header-top{
+    background-color: $header_bg;
+    padding: 25px 0;
+    @media #{$medium_device}{
+        padding: 15px 0;
+    }
+    @media #{$tab}{
+        padding: 15px 0;
+    }
+}

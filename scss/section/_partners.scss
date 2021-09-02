@@ -1,0 +1,115 @@
+.or-partners{
+    background-image: url(../img/logo-slid-bg.png);
+    background-color: $base_color_2;
+    padding: 85px 0;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    .swiper-button-next::after, .swiper-button-prev::after{
+        content: "";
+    }
+    .swiper-button-next, .swiper-button-prev{
+        z-index: 999;
+        height: 30px;
+        width: 52px;
+        border-radius: 8px;
+        background-color: $white;
+        line-height: 30px;
+        text-align: center;
+        i{
+            color: #a5a5a5;
+            transition: .4s;
+        }
+        &:hover{
+            i{
+                color: $base_color_1;
+            }
+        }
+    }
+    .swiper-button-next{
+        right: 305px;
+        left: auto;
+        top: 69%;
+        @media #{$extra_big_screen}{
+            right: 75px;
+        }
+        @media #{$big_screen}{
+            top: 92%;
+            right: 540px;
+        }
+        @media #{$medium_device}{
+            top: 90%;
+            right: 430px;
+        }
+        @media #{$tab_device}{
+            top: 88%;
+            right: 320px;
+        }
+        @media #{$large_mobile}{
+            top: 87%;
+            right: 230px;
+        }
+        @media #{$small_mobile_b}{
+            top:87%;
+            right: 185px;
+        }
+        @media #{$small_mobile}{
+            right: 20px;
+        }
+    }
+    .swiper-button-prev{
+        left: 305px;
+        right: auto;
+        top: 69%;
+        @media #{$extra_big_screen}{
+            left: 75px;
+        }
+        @media #{$big_screen}{
+            top: 92%;
+            left: 540px;
+        }
+        @media #{$medium_device}{
+            top: 90%;
+            left: 430px;
+        }
+        @media #{$tab_device}{
+            top: 88%;
+            left: 320px;
+        }
+        @media #{$large_mobile}{
+            left: 230px;
+            top: 87%;
+        }
+        @media #{$small_mobile_b}{
+            top:87%;
+            left: 185px;
+        }
+        @media #{$small_mobile}{
+            left: 20px;
+        }
+    }
+    .title{
+        margin-bottom: 40px;
+        .text-white{
+            span{
+                font-weight: $font_ragular;
+            }
+        }
+    }
+}
+.single-partners{
+    height: 82px;
+    width: 158px;
+    background-color: $white;
+    border-radius: 5px;
+    object-fit: cover;
+    overflow: hidden;
+    // img{
+    //     width: 200px;
+    //     height: 90px;
+    //     object-fit: cover;
+    // }
+    @media #{$small_mobile_b}{
+        width: 200px;
+    }
+}

@@ -1,0 +1,23 @@
+.or-contact{
+    margin-bottom: 50px;
+}
+.contact-us{
+    h4{
+        color: $base_color_2;
+    }
+    h2{
+        color: $base_color_1;
+        margin: 20px 0;
+    }
+    p{
+        line-height: 30px;
+        a{
+            color: $base_color_2;
+            font-weight: $font_bold;
+        }
+        span{
+            color: $base_color_1;
+            font-weight: $font_bold;
+        }
+    }
+}

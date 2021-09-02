@@ -1,0 +1,96 @@
+.or-banner {
+    background-image: url(../img/banner-2.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #00555e91;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 182px;
+        @media #{$small_mobile_b}{
+            bottom: 140px;
+        }
+        @media #{$small_mobile}{
+            bottom: 55px;
+         }
+    }
+    .swiper-pagination-bullet{
+        height: 12px;
+        width: 12px;
+        opacity: 1;
+        position: relative;
+        margin: 0 7px !important;
+        background-color: #ffffff;
+        &::after{
+            position: absolute;
+            content: "";
+            height: 25px;
+            width: 25px;
+            background-color: transparent;
+            top: 50%;
+            left: 50%;
+            margin: 0 auto;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+        }
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background-color: #00e4ff;
+        height: 12px;
+        width: 12px;&::after{
+           border: 1px solid #00e4ff;
+        }
+
+    }
+}
+
+.banner-content {
+    padding-top: 155px;
+    padding-bottom: 320px;
+    @media #{$tab_device}{
+        padding: 150px 0 250px 0;
+    }
+    @media #{$large_mobile}{
+        padding: 100px 0 250px 0;
+    }
+    @media #{$small_mobile_b}{
+        padding: 100px 0 200px 0;
+    }
+    @media #{$small_mobile}{
+        padding: 100px 0;
+    }
+
+    .banner-hadding {
+        color: $white;
+        @media #{$small_mobile}{
+           font-size: 35px;
+        }
+    }
+
+    .common_btn {
+        margin-top: 60px;
+        @media #{$large_mobile}{
+             margin-top: 20px;
+        }
+        @media #{$small_mobile_b}{
+           margin-top: 20px;
+        }
+        @media #{$small_mobile}{
+            margin-top: 20px;
+        }
+    }
+}
